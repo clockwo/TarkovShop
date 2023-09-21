@@ -1,0 +1,50 @@
+$home-bg-color: rgba(0, 0, 0, 0.7);
+
+.home {
+  background-color: $home-bg-color;
+
+  padding: 1.5em;
+
+  &-text {
+    text-align: justify;
+    margin-bottom: 2em;
+  }
+
+  &-subtitle,
+  &-title {
+    text-align: center;
+  }
+
+  &-title {
+    margin-bottom: 0.5em;
+    font-size: clamp(1.125rem, -0.4688rem + 7.5vw, 3.75rem);
+  }
+
+  &-subtitle {
+    margin-bottom: 1em;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  max-width: 23%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  &-img {
+    width: 100%;
+    max-height: 260px;
+  }
+
+  &-footer {
+    padding-block: 0.5em;
+    background-color: rgba(39, 41, 35, 0.9);
+  }
+
+  &-title {
+    text-align: center;
+  }
+}

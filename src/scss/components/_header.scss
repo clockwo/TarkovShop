@@ -1,19 +1,19 @@
-$nav-bg-color: rgba(0, 0, 0, 0.49);
-$nav-text-color: rgb(255,255,255);
+$nav-bg-color: rgba(0, 0, 0, 0.7);
+
+.header {
+  margin-bottom: 2rem;
+  background-color: $nav-bg-color;
+}
 
 .nav {
-  padding: 1.5rem;
-
-  background-color: $nav-bg-color;
+  padding: 1.5em;
 
   &-list {
     display: flex;
-    justify-content: space-evenly;
-    gap: .5em;
-
+    justify-content: space-between;
+    gap: 0.5em;
 
     font-size: 30px;
     font-weight: bold;
-    color: $nav-text-color;
   }
 }

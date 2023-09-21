@@ -1,3 +1,3 @@
 import "../scss/main.scss";
 
-import './components/home.js'
+import "./components/home.js";
