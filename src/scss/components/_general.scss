@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Bender';
+  src: url("/fonts/Bender.woff2") format('woff2');
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+  font-family: 'Bender';
+}
