@@ -62,4 +62,4 @@ export const getHomePage = () => {
   contentElement.appendChild(sectionElement);
 };
 
-getHomePage();
+// getHomePage();

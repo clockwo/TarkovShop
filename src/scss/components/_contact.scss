@@ -1,0 +1,54 @@
+$contact-bg-color: rgba(0, 0, 0, 0.7);
+
+.contact {
+  background-color: $contact-bg-color;
+  padding: 1.5em;
+
+  &-title {
+    margin-bottom: 0.3em;
+
+    font-size: clamp(1.125rem, -0.4688rem + 7.5vw, 3.75rem);
+    text-align: center;
+  }
+}
+
+.form {
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1em;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  grid-template-areas:
+    "img name name"
+    "img phone phone"
+    "img mail mail";
+
+  &-name {
+    grid-area: name;
+
+    font-size: 40px;
+  }
+
+  &-number {
+    grid-area: phone;
+    font-size: 30px;
+  }
+
+  &-mail {
+    grid-area: mail;
+    font-size: 30px;
+  }
+
+  &-img {
+    grid-area: img;
+    justify-self: start;
+    width: 100%;
+    max-width: 450px;
+    object-fit: cover;
+    object-position: center;
+    max-height: 250px;
+  }
+}
