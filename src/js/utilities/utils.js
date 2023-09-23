@@ -1,5 +1,15 @@
-export const createElement = (tag) => {
-  return document.createElement(tag);
+export const createElement = (tag, attributes = {}, properties = {}) => {
+  const element = document.createElement(tag);
+
+  for (const attr in attributes) {
+    element.setAttribute(attr, attributes[attr]);
+  }
+
+  for (const prop in properties) {
+    element[prop] = properties[prop];
+  }
+
+  return element;
 };
 
 export const createCardElement = (title, imgSource) => {
