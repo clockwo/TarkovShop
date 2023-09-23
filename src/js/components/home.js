@@ -1,11 +1,10 @@
-import { getHeaderElement } from "./header.js";
 import { createCardElement, createElement } from "../utilities/utils.js";
 
 const contentElement = document.getElementById("content");
 
 export const getHomePage = () => {
   // Append header
-  contentElement.appendChild(getHeaderElement());
+  // contentElement.appendChild(getHeaderElement());
 
   // Body
   const sectionElement = createElement("section");

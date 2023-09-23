@@ -11,10 +11,12 @@ export const getHeaderElement = () => {
 
   const ulElement = createElement("ul");
   ulElement.classList.add("nav-list");
+  ulElement.setAttribute("data-js-nav", "");
 
   for (const liName of pagesNames) {
     const liElement = document.createElement("li");
     liElement.classList.add("nav-item");
+    liElement.setAttribute("data-page", `${liName}`);
     liElement.textContent = liName;
     ulElement.appendChild(liElement);
   }

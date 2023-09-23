@@ -1,4 +1,3 @@
-import { getHeaderElement } from "./header.js";
 import { createElement } from "../utilities/utils.js";
 
 const contentElement = document.getElementById("content");
@@ -33,7 +32,7 @@ const getContactForm = (name, number, mail, imgSrc) => {
 
 export const getContactPage = () => {
   // header
-  contentElement.appendChild(getHeaderElement());
+  // contentElement.appendChild(getHeaderElement());
 
   // body
 

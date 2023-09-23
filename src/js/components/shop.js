@@ -1,4 +1,3 @@
-import { getHeaderElement } from "./header.js";
 import { createElement } from "../utilities/utils.js";
 
 const contentElement = document.getElementById("content");
@@ -43,7 +42,7 @@ const createWeaponCard = (name, cost, caliber, imgSrc) => {
 
 export const getShopPage = () => {
   // Append header
-  contentElement.appendChild(getHeaderElement());
+  // contentElement.appendChild(getHeaderElement());
 
   // Body
   const sectionElement = createElement("section");
