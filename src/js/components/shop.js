@@ -41,9 +41,6 @@ const createWeaponCard = (name, cost, caliber, imgSrc) => {
 };
 
 export const getShopPage = () => {
-  // Append header
-  // contentElement.appendChild(getHeaderElement());
-
   // Body
   const sectionElement = createElement("section");
   sectionElement.classList.add("shop", "wrapper");
@@ -78,5 +75,3 @@ export const getShopPage = () => {
 
   contentElement.appendChild(sectionElement);
 };
-
-// getShopPage();

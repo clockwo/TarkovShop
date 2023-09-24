@@ -13,22 +13,19 @@ export const createElement = (tag, attributes = {}, properties = {}) => {
 };
 
 export const createCardElement = (title, imgSource) => {
-  const cardBody = createElement("div");
-  cardBody.classList.add("card");
+  const cardBody = createElement("div", { class: "card" });
 
-  const img = new Image();
-  img.classList.add("card-img");
-  img.src = imgSource;
+  const img = createElement("img", { class: "card-img" }, { src: imgSource });
 
-  const cardFooter = createElement("div");
-  cardFooter.classList.add("card-footer");
+  const cardFooter = createElement("div", { class: "card-footer" });
 
-  const cardTitle = createElement("h2");
-  cardTitle.classList.add("card-title");
-  cardTitle.textContent = title;
+  const cardTitle = createElement(
+    "h2",
+    { class: "card-title" },
+    { textContent: title },
+  );
 
   cardFooter.appendChild(cardTitle);
-
   cardBody.appendChild(img);
   cardBody.appendChild(cardFooter);
 

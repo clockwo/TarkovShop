@@ -8,26 +8,22 @@ const contentElement = document.getElementById("content");
 contentElement.appendChild(getHeaderElement());
 const navigationElement = document.querySelector("[data-js-nav]");
 
-const loadPage = (page = "home") => {
-  switch (page) {
-    case "home":
-      getHomePage();
-      break;
-    case "shop":
-      getShopPage();
-      break;
-    case "contact":
-      getContactPage();
-      break;
-  }
+const pages = {
+  home: getHomePage,
+  shop: getShopPage,
+  contact: getContactPage,
 };
-
-loadPage();
 
 navigationElement.addEventListener("click", ({ target }) => {
   if (!target.matches(".nav-item")) return;
+
+  const page = target.dataset.page.toLowerCase();
+  if (!page) return;
+
   const element = document.querySelector("section");
-  const page = target.dataset.page;
   element.remove();
-  loadPage(page.toLowerCase());
+
+  if (pages[page]) pages[page]();
 });
+
+pages.home();

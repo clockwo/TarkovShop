@@ -3,45 +3,49 @@ import { createElement } from "../utilities/utils.js";
 const contentElement = document.getElementById("content");
 
 const getContactForm = (name, number, mail, imgSrc) => {
-  const formElement = createElement("div");
-  formElement.classList.add("form");
+  const formElement = createElement("div", { class: "form" });
 
-  const imgElement = new Image();
-  imgElement.src = imgSrc;
-  imgElement.classList.add("form-img");
+  const imgElement = createElement(
+    "img",
+    { class: "form-img" },
+    { src: imgSrc },
+  );
 
-  const nameElement = createElement("h2");
-  nameElement.classList.add("form-name");
-  nameElement.textContent = name;
+  const nameElement = createElement(
+    "h2",
+    { class: "form-name" },
+    { textContent: name },
+  );
 
-  const numberElement = createElement("p");
-  numberElement.classList.add("form-number");
-  numberElement.textContent = number;
+  const numberElement = createElement(
+    "p",
+    { class: "form-number" },
+    { textContent: number },
+  );
 
-  const mailElement = createElement("p");
-  mailElement.classList.add("form-mail");
-  mailElement.textContent = mail;
+  const mailElement = createElement(
+    "p",
+    { class: "form-mail" },
+    { textContent: mail },
+  );
 
-  formElement.appendChild(imgElement);
-  formElement.appendChild(nameElement);
-  formElement.appendChild(numberElement);
-  formElement.appendChild(mailElement);
+  [imgElement, nameElement, numberElement, mailElement].forEach((item) =>
+    formElement.appendChild(item),
+  );
 
   return formElement;
 };
 
 export const getContactPage = () => {
-  // header
-  // contentElement.appendChild(getHeaderElement());
-
   // body
 
-  const sectionElement = createElement("section");
-  sectionElement.classList.add("contact", "wrapper");
+  const sectionElement = createElement("section", { class: "contact wrapper" });
 
-  const titleElement = createElement("h1");
-  titleElement.classList.add("contact-title");
-  titleElement.textContent = "Contact Us";
+  const titleElement = createElement(
+    "h1",
+    { class: "contact-title" },
+    { textContent: "Contact Us" },
+  );
 
   sectionElement.appendChild(titleElement);
   sectionElement.appendChild(
@@ -60,7 +64,6 @@ export const getContactPage = () => {
       "/images/manager-2.png",
     ),
   );
+  
   contentElement.appendChild(sectionElement);
 };
-
-// getContactPage();
