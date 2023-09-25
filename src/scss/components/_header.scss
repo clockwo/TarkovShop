@@ -16,4 +16,20 @@ $nav-bg-color: rgba(0, 0, 0, 0.7);
     font-size: 30px;
     font-weight: bold;
   }
+
+  &-item {
+    padding: 0.1em 0.3em;
+    cursor: pointer;
+    transition: scale 100ms ease-in-out;
+    border-radius: 15px;
+  }
+
+  &-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &-item:active {
+    scale: 0.9;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 }

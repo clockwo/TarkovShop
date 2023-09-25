@@ -53,14 +53,14 @@ export const getShopPage = () => {
   weaponsElement.classList.add("shop-weapons");
 
   const weapons = [
-    ["AK-105", 5555, "5.45x39mm", "/images/weapons/AK-105.webp"],
-    ["AS VAL", 6000, "9x39mm", "/images/weapons/AS-VAL.webp"],
-    ["HK 416A5", 6500, "5.56x45mm", "/images/weapons/HK416.webp"],
-    ["TDI KRISS Vector", 7000, ".45 ACP", "/images/weapons/Vector.webp"],
-    ["FN P90", 5500, "5.7x28mm", "/images/weapons/P90.webp"],
-    ["AUG A1", 6000, "5.56x45mm", "/images/weapons/AUG-A1.webp"],
-    ["HK G36", 6200, "5.56x45mm", "/images/weapons/HK-G36.webp"],
-    ["DT MDR", 6800, "5.56x45mm", "/images/weapons/DT-MDR.webp"],
+    ["AK-105", 5555, "5.45x39mm", "./images/weapons/AK-105.webp"],
+    ["AS VAL", 6000, "9x39mm", "./images/weapons/AS-VAL.webp"],
+    ["HK 416A5", 6500, "5.56x45mm", "./images/weapons/HK416.webp"],
+    ["TDI KRISS Vector", 7000, ".45 ACP", "./images/weapons/Vector.webp"],
+    ["FN P90", 5500, "5.7x28mm", "./images/weapons/P90.webp"],
+    ["AUG A1", 6000, "5.56x45mm", "./images/weapons/AUG-A1.webp"],
+    ["HK G36", 6200, "5.56x45mm", "./images/weapons/HK-G36.webp"],
+    ["DT MDR", 6800, "5.56x45mm", "./images/weapons/DT-MDR.webp"],
   ];
 
   for (const weaponData of weapons) {

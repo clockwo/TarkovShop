@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
-  base: '',
+  base: "./",
   css: {
     postcss: {
-      plugins: [autoprefixer]
-    }
+      plugins: [autoprefixer],
+    },
   },
-})
+});

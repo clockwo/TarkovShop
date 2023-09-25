@@ -30,10 +30,10 @@ export const getHomePage = () => {
   );
 
   const cardPersons = [
-    ["Mark", "/images/trader-1.png"],
-    ["Eva", "/images/trader-2.png"],
-    ["Gleb", "/images/trader-3.png"],
-    ["Lina", "/images/trader-4.png"],
+    ["Mark", "./images/trader-1.png"],
+    ["Eva", "./images/trader-2.png"],
+    ["Gleb", "./images/trader-3.png"],
+    ["Lina", "./images/trader-4.png"],
   ];
 
   const cardContainerElement = createElement("div", { class: "home-cards" });

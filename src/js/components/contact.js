@@ -53,7 +53,7 @@ export const getContactPage = () => {
       "Maria Elizarova",
       "504-554-1212",
       "mariEliza@gmail.com",
-      "/images/manager.png",
+      "./images/manager.png",
     ),
   );
   sectionElement.appendChild(
@@ -61,9 +61,9 @@ export const getContactPage = () => {
       "Lena Melendez",
       "504-554-6666",
       "Melendez@gmail.com",
-      "/images/manager-2.png",
+      "./images/manager-2.png",
     ),
   );
-  
+
   contentElement.appendChild(sectionElement);
 };
